@@ -1,0 +1,13 @@
+begin;
+update abc_project set budget = 125000 where project_id = 'p301';
+rollback;
+begin;
+update abc_project set budget = 125000 where project_id = 'p301';
+commit;
+rollback;
+begin;
+update abc_project set budget = 100000 where project_id = 'p301';
+savepoint sp1;
+update abc_project set budget = 175000 where project_id = 'p302';
+rollback to savepoint sp1;
+commit;

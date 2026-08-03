@@ -1,0 +1,24 @@
+create database employee_management_system;
+create table abc_employee (emp_id varchar(20),emp_name varchar(25),
+gender varchar (20),emp_dob varchar(20),salary int,depart_id varchar(20));
+select * from abc_employee;
+insert into abc_employee values ('a101','siva','male','11-04-2000',55000,'finance');
+insert into abc_employee values ('a102','Suba','female','27-05-1999',25000,'sales');
+insert into abc_employee values ('a103','Kugan','male','29-05-2006',60000,'operations');
+insert into abc_employee values ('a104','rahul','male','24-10-2003',40000,'it_dept');
+insert into abc_employee values ('a105','Amutha','female','14-10-1997',30000,'support');
+update abc_employee set salary = 45000 where emp_name = 'rahul';
+update abc_employee set depart_id = 'customer_service' where emp_name = 'Amutha';
+delete from abc_employee where emp_name = 'Suba';
+delete from abc_employee where depart_id = 'finance';
+create table abc_depart (depart_id varchar(20),depart_name varchar(20),location varchar(20));
+select * from abc_depart;
+insert into abc_depart values ('d201','finance','pondy');
+insert into abc_depart values ('d202','sales','chennai');
+insert into abc_depart values ('d203','operations','pondy');
+insert into abc_depart values ('d204','it_dept','pondy');
+create table abc_project (project_id varchar(20),project_name varchar(25),budget int);
+select * from abc_project;
+insert into abc_project values ('p301','trial',100000);
+insert into abc_project values ('p302','real',150000);
+insert into abc_project values ('p303','final',200000);
