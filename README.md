@@ -15,7 +15,7 @@ This project is a SQL-based Employee Management System developed using PostgreSQ
 - TCL (BEGIN, COMMIT, ROLLBACK, SAVEPOINT)
 
 ## Tables
-- abc_mployee
+- abc_employee
 - abc_department
 - abc_project
 
